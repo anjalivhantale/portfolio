@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Vhantale | Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Anjali Vhantale</div>
+    <nav class="nav-links">
+      <a href="#" data-section="home" class="nav-link active">Home</a>
+      <a href="#" data-section="about" class="nav-link">About</a>
+      <a href="#" data-section="education" class="nav-link">Education</a>
+      <a href="#" data-section="projects" class="nav-link">Projects</a>
+      <a href="#" data-section="contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <!-- HOME SECTION (DASHBOARD) -->
+    <section class="section-panel active" id="home">
+      <svg class="background-pattern" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(79, 142, 247, 0.1)" stroke-width="2"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+        <g stroke="rgba(79, 142, 247, 0.15)" stroke-width="2" fill="none">
+          <line x1="10%" y1="10%" x2="30%" y2="20%"/>
+          <line x1="20%" y1="5%" x2="40%" y2="15%"/>
+          <line x1="8%" y1="30%" x2="25%" y2="40%"/>
+          <line x1="75%" y1="8%" x2="95%" y2="25%"/>
+          <line x1="80%" y1="20%" x2="100%" y2="35%"/>
+          <circle cx="15%" cy="15%" r="8" fill="rgba(79, 142, 247, 0.3)"/>
+          <circle cx="85%" cy="40%" r="6" fill="rgba(79, 142, 247, 0.3)"/>
+          <circle cx="35%" cy="60%" r="5" fill="rgba(79, 142, 247, 0.2)"/>
+        </g>
+      </svg>
+
+      <div class="background-animation">
+        <span style="--left: 10%; --top: 30%; --size: 22px; --delay: 0s;"></span>
+        <span style="--left: 20%; --top: 75%; --size: 16px; --delay: 1.2s;"></span>
+        <span style="--left: 35%; --top: 18%; --size: 28px; --delay: 0.8s;"></span>
+        <span style="--left: 60%; --top: 12%; --size: 18px; --delay: 1.8s;"></span>
+        <span style="--left: 78%; --top: 65%; --size: 24px; --delay: 1.1s;"></span>
+        <span style="--left: 88%; --top: 35%; --size: 14px; --delay: 0.5s;"></span>
+      </div>
+      
+      <div class="dashboard-content">
+        <div class="dashboard-left">
+          <div class="greeting animate-fade-in-left">Hi,</div>
+          <h1 class="name-title animate-fade-in-left" style="animation-delay: 0.1s">I'm <span class="accent">Anjali Siddheshwar Vhantale</span></h1>
+          <p class="subtitle animate-fade-in-left" style="animation-delay: 0.2s">I am into <span class="highlight typewriter"></span></p>
+          <p class="bio animate-fade-in-left" style="animation-delay: 0.3s">Diploma student at Fabtech Technical Campus, passionate about building elegant and responsive digital experiences.</p>
+          <div class="dashboard-actions animate-fade-in-left" style="animation-delay: 0.4s">
+            <button class="btn-dashboard" onclick="navigateToSection('about')">About Me →</button>
+            <a href="https://github.com/anjalivhantale" target="_blank" class="github-btn">GitHub</a>
+          </div>
+          <div class="social-icons animate-fade-in-left" style="animation-delay: 0.5s">
+            <a href="https://linkedin.com/in/anjali" title="LinkedIn" class="social-icon">in</a>
+            <a href="https://github.com/anjalivhantale" title="GitHub" class="social-icon">⚙</a>
+            <a href="mailto:vhantaleanjali@gmail.com" title="Email" class="social-icon">✉</a>
+            <a href="https://twitter.com" title="Twitter" class="social-icon">𝕏</a>
+            <a href="https://instagram.com" title="Instagram" class="social-icon">📷</a>
+          </div>
+        </div>
+        
+        <div class="dashboard-right">
+          <div class="profile-circle animate-fade-in-right">
+            <img src="profile.jpeg" alt="Anjali Vhantale" onerror="this.src='https://via.placeholder.com/360x360?text=Profile'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-panel" id="about">
+      <div class="section-container animate-fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="info-card">
+            <h3>Basic Information</h3>
+            <ul>
+              <li><strong>Full Name:</strong> Anjali Siddheshwar Vhantale</li>
+              <li><strong>Date of Birth:</strong> 28-06-2007</li>
+              <li><strong>Gender:</strong> Female</li>
+              <li><strong>Age:</strong> 19</li>
+              <li><strong>Nationality:</strong> India</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Contact Information</h3>
+            <ul>
+              <li><strong>Mobile:</strong> 7821825352</li>
+              <li><strong>Email:</strong> <a href="mailto:vhantaleanjali@gmail.com">vhantaleanjali@gmail.com</a></li>
+              <li><strong>City:</strong> Latur, Maharashtra</li>
+              <li><strong>Pin Code:</strong> 413512</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Identification</h3>
+            <ul>
+              <li><strong>Aadhar No:</strong> 7964 9162 4893</li>
+              <li><strong>PAN No:</strong> <em>N/A</em></li>
+            </ul>
+          </div>
+          <div class="info-card skills-card">
+            <h3>Skills</h3>
+            <div class="skill-badges">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>UI/UX</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section-panel" id="education">
+      <div class="section-container animate-fade-in">
+        <h2 class="section-title">Academic Journey</h2>
+        <div class="timeline">
+          <div class="timeline-card">
+            <div class="timeline-marker"></div>
+            <h3>Diploma - Fabtech Technical Campus, Sangola</h3>
+            <p><strong>Year:</strong> 1st Year</p>
+            <p><strong>Course:</strong> Diploma in Engineering</p>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-marker"></div>
+            <h3>12th - Sevagram Jr. College, Kawatha, Omerga</h3>
+            <p><strong>Percentage:</strong> 60%</p>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-marker"></div>
+            <h3>10th - Maharashtra Vidyalaya, Maharashtra Ekoji</h3>
+            <p><strong>Percentage:</strong> 75.40%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section-panel" id="projects">
+      <div class="section-container animate-fade-in">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Milk Product Website</h3>
+            <p>Created a responsive milk product landing page with product cards, pricing, and interactive features using HTML, CSS, and JavaScript. Features include product showcase, toast notifications, and feedback form.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/anjalivhantale/milk-product" target="_blank" class="project-link">View Repository →</a>
+          </article>
+          
+          <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Designed and developed a clean portfolio website showcasing personal profile, education, and project highlights. Built with responsive design principles and modern CSS techniques.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive</span>
+            </div>
+            <a href="https://github.com/anjalivhantale/portfolio" target="_blank" class="project-link">View Repository →</a>
+          </article>
+          
+          <article class="project-card">
+            <h3>Personal Portfolio Projects</h3>
+            <p>Built multiple portfolio pages to present academic achievements and technical capabilities. Demonstrates proficiency in front-end development and UI design principles.</p>
+            <div class="project-tags">
+              <span>Web Dev</span>
+              <span>UI/UX</span>
+              <span>GitHub</span>
+            </div>
+            <a href="https://github.com/anjalivhantale" target="_blank" class="project-link">View Repository →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-panel" id="contact">
+      <div class="section-container animate-fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Let's collaborate</h3>
+            <p>I'm available for internships, freelance projects, and collaboration opportunities in web development and UI/UX design.</p>
+            <div class="contact-details">
+              <p><strong>📧 Email:</strong> <a href="mailto:vhantaleanjali@gmail.com">vhantaleanjali@gmail.com</a></p>
+              <p><strong>📱 Phone:</strong> 7821825352</p>
+              <p><strong>📍 Location:</strong> Latur, Maharashtra, India</p>
+              <p><strong>🔗 GitHub:</strong> <a href="https://github.com/anjalivhantale" target="_blank">anjalivhantale</a></p>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="contactName" placeholder="Your Name" required>
+            <input type="email" id="contactEmail" placeholder="Your Email" required>
+            <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-send">Send Message</button>
+            <p class="form-note">I'll respond within 24 hours</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
